@@ -1,6 +1,12 @@
-/*******************************************************************************
-MeyerWeb Reset
-*******************************************************************************/
+$LinkColor: #1996fc;
+$BgColor: #101112;
+$BgColorDark: #111;
+$BgColorLight1: #222;
+$BgColorLight2: #272727;
+$TextColor: #FFFFFF;
+$TextColorDim: #F2F2F2;
+
+// MeyerWeb Reset
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -37,18 +43,14 @@ table {
 	border-spacing: 0;
 }
 
-/*******************************************************************************
-Theme Styles
-*******************************************************************************/
-
 :root {
 	font-size: 16px;
 }
 
 body {
 	box-sizing: border-box;
-	color: #F2F2F2;
-	background: #212121;
+	color: $TextColorDim;
+	background: $BgColor;
 	font-size: 1rem;
 	font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -58,15 +60,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
 	font-weight: 700;
-	color: #FFF;
+	color: $TextColor;
 	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 	letter-spacing: -1px;
 }
 
-h1 {
-	font-size: 3rem;
-	font-weight: 700;
-}
+h1 { font-size: 3rem; font-weight: 700; }
+h1 kbd { font-size: 2.5rem; line-height: 2.5rem; }
 
 h2 {
 	padding-bottom: 10px;
@@ -74,33 +74,29 @@ h2 {
 	background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
-h3 {
-	font-size: 2rem;
-}
+h3 { font-size: 2rem; }
+h2 kbd { font-size: 1.5rem; line-height: 1.5rem; }
 
-h4 {
-	font-size: 1.75rem;
-}
+h4 { font-size: 1.75rem; }
+h4 kbd { font-size: 1.2rem; line-height: 1.2rem; }
 
-h5 {
-	font-size: 1.5rem;
-}
+h5 { font-size: 1.5rem; }
+h5 kbd { font-size: 1.1rem; line-height: 1.1rem; }
 
-h6 {
-	font-size: 1.33333333333rem;
-}
+h6 { font-size: 1.33333333333rem; }
+h6 kbd { font-size: 1rem; line-height: 1rem; }
 
 p {
 	margin: 10px 0 15px 0;
 }
 
 footer p {
-	color: #f2f2f2;
+	color: $TextColorDim;
 }
 
 a {
 	text-decoration: none;
-	color: #0F79D0;
+	color: $LinkColor;
 	text-shadow: none;
 
 	transition: color 0.5s ease;
@@ -120,8 +116,8 @@ a:hover, a:focus {
 }
 
 footer a {
-	color: #F2F2F2;
-	text-decoration: underline;
+	font-weight: bold;
+	color: $TextColorDim;
 }
 
 em, cite {
@@ -138,13 +134,13 @@ img {
 	max-width: 739px;
 	padding: 5px;
 	margin: 10px 0 10px 0;
-	border: 1px solid #222;
+	border: 1px solid $BgColorLight1;
 
-	box-shadow: 0 0 5px #222;
-	-webkit-box-shadow: 0 0 5px #222;
-	-moz-box-shadow: 0 0 5px #222;
-	-o-box-shadow: 0 0 5px #222;
-	-ms-box-shadow: 0 0 5px #222;
+	box-shadow: 0 0 5px $BgColorLight1;
+	-webkit-box-shadow: 0 0 5px $BgColorLight1;
+	-moz-box-shadow: 0 0 5px $BgColorLight1;
+	-o-box-shadow: 0 0 5px $BgColorLight1;
+	-ms-box-shadow: 0 0 5px $BgColorLight1;
 }
 
 p img {
@@ -157,7 +153,7 @@ p img {
 }
 
 pre, code {
-	color: #F2F2F2;
+	color: $TextColorDim;
 	background-color: inherit;
 
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -231,7 +227,7 @@ hr {
 }
 
 table {
-	border: 1px solid #373737;
+	border: 1px solid $BgColorLight2;
 	margin-bottom: 20px;
 	text-align: left;
  }
@@ -239,17 +235,17 @@ table {
 th {
 	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: 10px;
-	background: #373737;
-	color: #fff;
+	background: $BgColorLight2;
+	color: $TextColor;
  }
 
 td {
 	padding: 10px;
-	border: 1px solid #373737;
+	border: 1px solid $BgColorLight2;
  }
 
 form {
-	background: #f2f2f2;
+	background: $TextColorDim;
 	padding: 20px;
 }
 
@@ -261,15 +257,11 @@ kbd {
 	box-shadow: inset 0 -1px 0 #959da5;
 	color: #444d56;
 	display: inline-block;
-	font-size: 11px;
-	line-height: 11px;
-	padding: 3px 5px;
+	font-size: 0.91666666666rem;
+	line-height: 0.91666666666rem;
+	padding: 5px 12px;
 	vertical-align: middle;
 }
-
-/*******************************************************************************
-Full-Width Styles
-*******************************************************************************/
 
 .outer {
 	width: 100%;
@@ -289,8 +281,8 @@ Full-Width Styles
 	right: 10px;
 	z-index: 10;
 	padding: 10px 50px 10px 10px;
-	color: #fff;
-	background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+	color: $TextColor;
+	background: url('../images/blacktocat.png') $LinkColor no-repeat 95% 50%;
 	font-weight: 700;
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
 	border-bottom-left-radius: 2px;
@@ -298,12 +290,12 @@ Full-Width Styles
 }
 
 #header_wrap {
-	background: #212121;
-	background: -moz-linear-gradient(top, #373737, #212121);
-	background: -webkit-linear-gradient(top, #373737, #212121);
-	background: -ms-linear-gradient(top, #373737, #212121);
-	background: -o-linear-gradient(top, #373737, #212121);
-	background: linear-gradient(to top, #373737, #212121);
+	background: $BgColor;
+	background: -moz-linear-gradient(top, $BgColorLight2, $BgColor);
+	background: -webkit-linear-gradient(top, $BgColorLight2, $BgColor);
+	background: -ms-linear-gradient(top, $BgColorLight2, $BgColor);
+	background: -o-linear-gradient(top, $BgColorLight2, $BgColor);
+	background: linear-gradient(to top, $BgColorLight2, $BgColor);
 }
 
 #header_wrap .inner {
@@ -312,18 +304,18 @@ Full-Width Styles
 
 #project_title {
 	margin: 0;
-	color: #fff;
-	font-size: 42px;
+	color: $TextColor;
+	font-size: 3.5rem;
 	font-weight: 700;
-	text-shadow: #111 0px 0px 10px;
+	text-shadow: $BgColorDark 0px 0px 10px;
 }
 
 #project_tagline {
-	color: #fff;
-	font-size: 24px;
+	color: $TextColor;
+	font-size: 2rem;
 	font-weight: 300;
 	background: none;
-	text-shadow: #111 0px 0px 10px;
+	text-shadow: $BgColorDark 0px 0px 10px;
 }
 
 #downloads {
@@ -366,10 +358,10 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-	color: #F2F2F2;
-	background: #212121;
-	border-top: 1px solid #111;
-	border-bottom: 1px solid #111;
+	color: $TextColorDim;
+	background: $BgColor;
+	border-top: 1px solid $BgColorDark;
+	border-bottom: 1px solid $BgColorDark;
 }
 
 #main_content {
@@ -377,7 +369,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-	background: #252525;
+	background: $BgColorLight1;
 }
 
 // My Custom Footer Styling
@@ -390,12 +382,8 @@ footer {
 footer a {
 	display: table-cell;
 	text-align: center;
-	color: #0F79D0;
+	color: $LinkColor;
 }
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
 
 @media screen and (max-width: 992px) {
 	img {
@@ -405,7 +393,7 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
 	:root {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	#downloads {
@@ -415,44 +403,11 @@ Small Device Styles
 	.inner {
 		max-width: 470px;
 	}
-
-	#project_title {
-		font-size: 2.66666666667rem;
-	}
-
-	h1 {
-		font-size: 2.33333333333rem;
-	}
-
-	h2 {
-		font-size: 2rem;
-	}
-
-	h3 {
-		font-size: 1.75rem;
-	}
-
-	h4 {
-		font-size: 1.5rem;
-	}
-
-	h5 {
-		font-size: 1.16666666667rem;
-	}
-
-	h6 {
-		font-size: 1rem;
-	}
-
-	code, pre {
-		font-size: 0.91666666666rem;
-	}
-
 }
 
 @media screen and (max-width: 320px) {
 	:root {
-		font-size: 14px;
+		font-size: 10px;
 	}
 
 	#downloads {
@@ -463,37 +418,7 @@ Small Device Styles
 		max-width: 310px;
 	}
 
-	#project_title {
-		font-size: 2.33333333333rem;
-	}
-
-	h1 {
-		font-size: 2rem;
-	}
-
-	h2 {
-		font-size: 1.75rem;
-	}
-
-	h3 {
-		font-size: 1.5rem;
-	}
-
-	h4 {
-		font-size: 1.33333333333rem;
-	}
-
-	h5 {
-		font-size: 1.16666666667rem;
-	}
-
-	h6 {
-		font-size: 1rem;
-	}
-
 	code, pre {
 		max-width: 310px;
-		font-size: 0.91666666666rem;
 	}
-
 }
