@@ -30,11 +30,18 @@ var fun = function lang(l) {
 }
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+```armasm
+; Clearing 16 bits of memory
+_CLR16 LDA #0          ;Load constant zero into A
+       STA MEM+0       ;Then clear the least significant byte
+       STA MEM+1       ;... followed by the most significant
+
+; Clearing 32 bits of memory
+_CLR32 LDA #0          ;Load constant zero into A
+       STA MEM+0       ;Clear from the least significant byte
+       STA MEM+1       ;... up
+       STA MEM+2       ;... to
+       STA MEM+3       ;... the most significant
 ```
 
 #### Header 4
