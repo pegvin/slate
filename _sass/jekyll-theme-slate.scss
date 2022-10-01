@@ -380,7 +380,18 @@ Full-Width Styles
 	background: #252525;
 }
 
+// My Custom Footer Styling
+footer {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
 
+footer a {
+	display: table-cell;
+	text-align: center;
+	color: #0F79D0;
+}
 
 /*******************************************************************************
 Small Device Styles
