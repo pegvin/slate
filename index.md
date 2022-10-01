@@ -5,7 +5,7 @@ nav1:
   title: GitHub
 
 nav2:
-  url: https://docs.github.com
+  url: https://docs.github.com/en
   title: GitHub Docs
 
 nav3:
