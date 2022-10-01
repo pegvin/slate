@@ -1,5 +1,17 @@
 ---
 layout: default
+nav1:
+  url: https://github.com
+  title: GitHub
+
+nav2:
+  url: https://docs.github.com
+  title: GitHub Docs
+
+nav3:
+  url: https://jekyllrb.com/
+  title: Jekyll
+
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -121,10 +133,10 @@ _CLR32 LDA #0          ;Load constant zero into A
 <dd>Green</dd>
 </dl>
 
-```
+```plain
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
+```plain
 The final element.
 ```
